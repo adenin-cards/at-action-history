@@ -14,10 +14,19 @@ properties:
     type: element
     xtype: at-core-vlist
     itemComponent: at-action-history/at-action-history-item-card
-    scrollMode: 0
+    scrollMode: 1
     actionListeners:
       - _all
     modelRoot: state.model
+    listHeight: 250px
+    listHeightExpanded: 400px
+  footer3:
+    type: element
+    title: Card Footer 3
+    xtype: at-carbon-card-footer
+    xgridcols: 12
+    expandable: !!bool true
+    expandMode: 2
 $meta:
   cardId: !!int 41
   preview-data: |-
