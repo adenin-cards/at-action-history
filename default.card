@@ -1,0 +1,123 @@
+$type: card
+rules: []
+properties:
+  title:
+    type: element
+    xtype: at-carbon-card-title
+    title: title
+    xgridcols: 12
+    xstyle: 
+    xclass: 
+    actionListeners:
+      - _start
+  vlist3:
+    type: element
+    xtype: at-core-vlist
+    itemComponent: at-action-history/at-action-history-item-card
+    scrollMode: 0
+    actionListeners:
+      - _all
+    modelRoot: state.model
+$meta:
+  cardId: !!int 41
+  preview-data: |-
+    { "items": [
+      {
+        "Id": 6,
+        "HistoryTime": "2019-07-11T09:27:31Z",
+        "UserId": 2,
+        "HistoryType": "approve",
+        "Url": "https://www.adenin.com/pocdef?id=15",
+        "UrlTitle": "PR #15",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #15: approved",
+        "Data": "{}"
+      },
+      {
+        "Id": 7,
+        "HistoryTime": "2019-07-11T09:27:31Z",
+        "UserId": 2,
+        "HistoryType": "reject",
+        "Url": "https://www.adenin.com/pocdef?id=14",
+        "UrlTitle": "PR #14",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #14: rejected",
+        "Data": "{}"
+      },
+      {
+        "Id": 5,
+        "HistoryTime": "2019-07-11T09:27:29Z",
+        "UserId": 2,
+        "HistoryType": "reject",
+        "Url": "https://www.adenin.com/pocdef?id=12",
+        "UrlTitle": "PR #12",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #12: rejected",
+        "Data": "{}"
+      },
+      {
+        "Id": 4,
+        "HistoryTime": "2019-07-11T09:27:27Z",
+        "UserId": 2,
+        "HistoryType": "approve",
+        "Url": "https://www.adenin.com/pocdef?id=11",
+        "UrlTitle": "PR #11",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #11: approved",
+        "Data": "{}"
+      },
+      {
+        "Id": 3,
+        "HistoryTime": "2019-07-11T09:27:24Z",
+        "UserId": 2,
+        "HistoryType": "reject",
+        "Url": "https://www.adenin.com/pocdef?id=8",
+        "UrlTitle": "PR #8",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #8: rejected",
+        "Data": "{}"
+      },
+      {
+        "Id": 2,
+        "HistoryTime": "2019-07-11T09:27:22Z",
+        "UserId": 2,
+        "HistoryType": "approve",
+        "Url": "https://www.adenin.com/pocdef?id=7",
+        "UrlTitle": "PR #7",
+        "Container": "Purchase Requistions",
+        "ContainerUrl": "https://www.adenin.com/pocdef?app=PR",
+        "Message": "Purchase Requisition #7: approved",
+        "Data": "{}"
+      },
+      {
+        "Id": 1,
+        "HistoryTime": "2019-06-12T11:44:12Z",
+        "UserId": 2,
+        "HistoryType": "CardDismiss",
+        "Url": "",
+        "UrlTitle": "",
+        "Container": "Order Volume",
+        "ContainerUrl": "",
+        "Message": "Dismiss",
+        "Data": "{\"id\":2,\"title\":\"Order Volume\"}"
+      }
+    ]}
+  preview-mode: static
+  preview-container: event
+  search-term: 
+  service-url: 
+  xclass: 
+  xstyle: 
+  code: |-
+    action.initialize = function(evt) {
+      var items = evt.model;
+      
+      evt.model = {
+      	items: items
+      };
+    }

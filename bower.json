@@ -1,0 +1,8 @@
+{
+  "name": "at-action-history",
+  "version": "0.0.1.27",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  }
+}

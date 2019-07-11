@@ -1,0 +1,70 @@
+contentType: Card
+UserActions:
+  cardId: !!int 41
+  hasNotifications: !!bool false
+  isIsoloated: !!bool false
+  maxItems: !!int 3
+  pinnable: !!bool true
+title: Action History
+name: at-action-history
+CollectionModeField: null
+MaxItemsField: null
+PriorityField: null
+StreamSource: null
+CardComponent: at-action-history/at-action-history-card
+StoreMetadataField: null
+CommonPart:
+  Owner: !!int 2
+  Container: null
+  CreatedUtc: 2019-07-11T09:29:17.7843787Z
+  PublishedUtc: 2019-07-11T09:29:17.8013693Z
+  ModifiedUtc: 2019-07-11T09:29:17.7843787Z
+  VersionCreatedUtc: 2019-07-11T09:29:17.7843787Z
+  VersionPublishedUtc: 2019-07-11T09:29:17.8013693Z
+  VersionModifiedUtc: 2019-07-11T09:29:17.7843787Z
+ServicePart:
+  ConnectorTypeId: !!int 0
+  ConnectorName: HistoryItems
+  ServiceName: ItemsGet
+  Url: ~/api/adenin.GateKeeper.History/ItemsGet
+  ServiceParameters: '{}'
+SearchContextPart:
+  Query: null
+  Interface: null
+CommandPart:
+  CommandType: None
+  Command: 
+  DefaultDate: null
+  Intent: null
+  Ext: {}
+AppPart:
+  App: null
+  Url: 
+  ExtUrl: 
+  Priority: !!int 0
+  AppFaceId: !!int 0
+  Category: orange
+  Icon: now:search
+  CSSClasses: null
+  Enabled: !!bool false
+  NewWindow: !!bool false
+  UrlWithId: !!bool true
+  AvailableAppFaceRecords: null
+  HasPattern: !!bool false
+RoleViewPermissionsPart:
+  AllowedRoles: []
+  Audiences:
+    - Authenticated
+  Mandatory: False
+RecurringTaskPart:
+  Schedule: '- - - - -'
+  ActivityType: adenin.Now.Activities.CardTask.UpdateCard
+  StartDateUtc: null
+  EndDateUtc: null
+  NextOccurrenceUtc: null
+  Priority: !!int 5
+  Status: Enabled
+  NowFlag: 0
+  LastExecutionUTC: null
+  EnableWebHook: !!bool false
+  WebHookToken: null
